@@ -1,0 +1,192 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    background-image: url("foto_cabecalho.gif");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    transform-origin: center;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 47.5px 9.5px; 
+    margin: 0;
+    background: transparent;
+}
+
+header h1 {
+    font-size: 2.375rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1.14rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.perfil {
+    text-align: center;
+    margin-top: 19px; 
+}
+
+.foto_perfil {
+    width: 142.5px;
+    height: 142.5px; 
+    border-radius: 50%;
+    display: inline-block;
+}
+
+nav{
+    position: top;
+    z-index: 100;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;       
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    position: top;
+}
+
+nav ul li {
+    margin: 0px;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14.25px 46px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #401049;
+}
+
+section {
+    padding: 28.5px;
+    background-color: #bebebe;
+    border-radius: 15px;
+    margin: 50px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 19px;
+    color: #333;
+}
+
+section p {
+    font-size: 0.98rem;
+    line-height: 1.6;
+    color: #000000;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin-top: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    padding: 20px;
+}
+
+footer nav {
+    margin-top: 40;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.425rem;
+    margin-right: 14.25px;
+}   
+
+.social-links a:hover {
+    color: #9900ff8c;
+}
+
+.link-projetos {
+    display: block;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.link-projetos a {
+    text-decoration: none;
+    font-size: 1.14rem;
+    color: #333;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+}
+
+.link-projetos li {
+    margin-bottom: 9.5px; 
+}
+
+.link-projetos a:hover {
+    color: #a01414;
+}
+
+.link-projetos i {
+    margin-right: 9.5px;
+    font-size: 1.425rem;
+    transition: transform 0.3s;
+}
+
+.link-projetos a:hover i {
+    transform: scale(1.2);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); 
+    gap: 19px;
+}
+
+.skill-card {
+    background-color: #868686;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.skill-card h3 {
+    font-size: 1.425rem;
+    color: #000000;
+}
+
+.skill-card p {
+    font-size: 0.95rem; 
+    color: #000000;
+}
+
+.skill-card i {
+    font-size: 2.375rem; 
+    margin-bottom: 9.5px; 
+    color: #a01414;
+}
