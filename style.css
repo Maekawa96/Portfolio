@@ -140,6 +140,10 @@ section p {
     gap: 20px;
     margin-top: 20px;
 }
+.skills-grid h:hover  {
+    transition: transform 0.4s;
+    transform: scale(1.1);
+}
 
 .skill-card {
     background-color: #360038;
@@ -159,6 +163,8 @@ section p {
     font-size: 0.95rem;
     color: white;
 }
+
+
 
 /* Responsividade */
 @media (max-width: 768px) {
