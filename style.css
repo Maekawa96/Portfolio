@@ -1,5 +1,5 @@
 * {
-    margin: 0; 
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -7,10 +7,22 @@
 body {
     background-color: rgb(0, 0, 0);
     background-image: url("foto_cabecalho.gif");
-    background-size: 50%;
+    background-size: 60%;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    font-family: 'Alegreya', serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Alegreya', serif;
+}
+
+main {
+    max-width: 80%; /* Agora ocupa toda a largura disponível */
+    margin: 150px 0 0 0; /* Ajusta a margem superior e remove a centralização */
+    padding: 0; /* Remove o padding interno */
+    text-align: left; /* Garante que o texto fique alinhado à esquerda */
 }
 
 header {
@@ -63,11 +75,11 @@ nav ul li a:hover {
 }
 
 section {
-    padding: 20px;
+    padding: 60px;
     background-color: #03030375;
     color: #ffffff;
-    border-radius: 10px;
-    margin: 20px;
+    border-radius: 100px;
+    margin: 100px 0; /* Ajustado para não interferir no alinhamento */
 }
 
 section h2 {
@@ -93,20 +105,81 @@ footer p {
     font-size: 1rem;
 }
 
-.social-links {
-    margin-top: 20px;
+.card {
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 25px;
+    gap: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
 }
 
-.social-links a {
-    color: white;
-    font-size: 2rem;
-    margin-right: 15px;
+/* for all social containers*/
+.socialContainer {
+    width: 52px;
+    height: 52px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
 }
 
-.social-links a:hover i {
-    color: #9900ff8c;
-    transition: transform 0.4s;
-    transform: scale(1.4);
+/* instagram*/
+.containerOne:hover {
+    background-color: #ff7300;
+    transition-duration: .3s;
+}
+
+/* twitter*/
+.containerTwo:hover {
+    background-color: #9e0089;
+    transition-duration: .3s;
+}
+
+/* linkdin*/
+.containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: .3s;
+}
+
+/* Whatsapp*/
+.containerFour:hover {
+    background-color: #00d672;
+    transition-duration: .3s;
+}
+
+.socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+}
+
+.socialSvg {
+    width: 17px;
+}
+
+.socialSvg path {
+    fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .link-projetos {
@@ -125,7 +198,7 @@ footer p {
 }
 
 .link-projetos li {
-    margin-bottom: 9.5px; 
+    margin-bottom: 9.5px;
 }
 
 .link-projetos a:hover {
